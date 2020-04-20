@@ -4,3 +4,8 @@
 
 
 <p><strong>Description:</strong><br/><%= @article.description %></p>
+
+
+<%= link_to 'Edit article', edit_article_path(@article) %> |
+<%= link_to 'Delete', article_path(@article), method: :Delete, data: {confirm: "Are you sure?"} %> |
+<%= link_to 'Return list', articles_path %>
